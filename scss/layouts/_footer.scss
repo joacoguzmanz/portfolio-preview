@@ -1,0 +1,47 @@
+.footer {
+  text-align: center;
+
+  @include breakpoint-up(large) {
+    a:hover {
+      color: $white;
+    }
+  }
+
+  &__text {
+    font-size: $heading-lg-48;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 60px;
+
+    @include breakpoint-up(large) {
+      text-align: center;
+      font-size: $heading-md-40;
+    }
+  }
+
+  &__mail {
+    color: $white;
+    font-size: $heading-xs-24;
+  }
+
+  &__social-links {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      color: $white;
+      font-size: $heading-xs-24;
+    }
+
+    @include breakpoint-up(large) {
+      display: block;
+
+      a {
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+}

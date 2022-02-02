@@ -1,0 +1,80 @@
+.form {
+  margin-bottom: 90px;
+
+  &__input-container {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    position: relative;
+
+    > span {
+      position: absolute;
+      right: 10px;
+      top: 40px;
+      visibility: hidden;
+    }
+
+    > small {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      visibility: hidden;
+    }
+
+    &.success {
+      > input,
+      textarea {
+        border: 1px solid $success;
+      }
+
+      > span.fa-check-circle {
+        color: $success;
+        visibility: visible;
+      }
+    }
+
+    &.error {
+      > input,
+      textarea {
+        border: 1px solid $error;
+      }
+
+      > span.fa-exclamation-circle {
+        color: $error;
+        visibility: visible;
+      }
+
+      > small {
+        color: $error;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__tags {
+    display: block;
+    font-size: $body-sm-16;
+    font-weight: $regular;
+  }
+
+  &__fields {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 200px;
+    // margin-bottom: 10px;
+    resize: none;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  &__button {
+    border: none;
+    width: 40%;
+    margin-left: 60%;
+  }
+}

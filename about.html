@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cb277fa1c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Joaquin Guzman - About me</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Navigation -->
+      <nav class="container header__nav flex flex-ai-c flex-jc-sb">
+        <!-- Logo -->
+        <a href="/index.html"><h1 class="header__logo">Jg</h1></a>
+
+        <!-- Hamburguer toggle -->
+        <a href="#" class="header__toggle hide-for-desktop" id="btnHamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <!-- Links -->
+        <div class="header__links hide-for-mobile">
+          <a href="/projects.html">Portfolio</a>
+          <a href="/about.html">About Me</a>
+          <a href="#">Blog</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div class="header__menu flex flex-fd-cl flex-jc-c">
+        <a href="/index.html">Home</a>
+        <a href="/projects.html">Portfolio</a>
+        <a href="/about.html">About</a>
+        <a href="#">Blog</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </header>
+
+    <section class="hero-about container">
+      <div class="hero-about__image"></div>
+      <div class="hero-about__text">
+        <h2 class="hero-about__title">
+          I am a front-end developer who loves design and new technologies.
+        </h2>
+        <p class="hero-about__subtitle">
+          Based in Buenos Aires, I am a really curious person who is always
+          learning and trying new things.
+        </p>
+        <p class="hero-about__subtitle">
+          I am really fond in subjects like Artificial Intelligence, Augmented
+          Reality and the Internet of Things and I would love to work in
+          projects that implement this technologies in websites to take user
+          experience to a new level.
+        </p>
+      </div>
+    </section>
+
+    <section class="tech container">
+      <div class="tech__title-wrapper">
+        <h2 class="tech__title">Technologies I use</h2>
+      </div>
+      <div class="tech__text">
+        <p class="tech__description">
+          When I think of a project, I usually start on paper making some
+          mockups or taking notes about the ideas I got. Then I use Whimsical to
+          work on the sitemaps and basic structure of the site. I follow with
+          wireframes and designs in Adobe XD and use Photoshop if there is an
+          image that needs a little retouching.
+        </p>
+        <p class="tech__description">
+          For development, I like to use SASS to keep my CSS as clean as I can
+          and try to make my HTML the most Google friendly possible. I also use
+          vanilla JavaScript whenever necessary. For the back-end, I started
+          working with Django because I love Python and I used PostgreSQL as it
+          is Django's recommended.
+        </p>
+        <p class="tech__description">
+          Even though I do not master all of this technologies I am capable of
+          making some good projects all by myself.
+        </p>
+        <div class="tech__stack">
+          <div class="tech__group">
+            <h3 class="tech__stack--titles">UX/UI Design</h3>
+            <p class="tech__stack--items">Whimsical</p>
+            <p class="tech__stack--items">Adobe XD</p>
+            <p class="tech__stack--items">Adobde Photoshop</p>
+          </div>
+          <div class="tech__group">
+            <h3 class="tech__stack--titles">Front-end</h3>
+            <p class="tech__stack--items">HTML5</p>
+            <p class="tech__stack--items">CSS3</p>
+            <p class="tech__stack--items">SASS</p>
+            <p class="tech__stack--items">JavaScript</p>
+          </div>
+          <div class="tech__group">
+            <h3 class="tech__stack--titles">Back-end</h3>
+            <p class="tech__stack--items">Python</p>
+            <p class="tech__stack--items">Django</p>
+            <p class="tech__stack--items">PostgreSQL</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-container">
+      <footer class="footer container">
+        <h2 class="footer__text">You can contact me here</h2>
+        <a href="mailto:contact@joacoguzman.com" class="footer__mail"
+          >contact@joacoguzman.com</a
+        >
+        <div class="footer__social-links">
+          <a href="https://www.instagram.com/joacoguzmanz/" target="_blank"
+            ><span class="fab fa-instagram"></span
+          ></a>
+          <a href="https://www.linkedin.com/in/guzman-joaquin/" target="_blank"
+            ><span class="fab fa-linkedin"></span
+          ></a>
+          <a href="https://dribbble.com/triadstudioco" target="_blank"
+            ><span class="fab fa-dribbble"></span
+          ></a>
+          <a href="https://github.com/joacoguzmanz" target="_blank"
+            ><span class="fab fa-github"></span
+          ></a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/app.js"></script>
+  </body>
+</html>

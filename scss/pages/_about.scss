@@ -1,0 +1,94 @@
+.hero-about {
+  margin-bottom: 7.5rem;
+  @include breakpoint-up(large) {
+    height: 90vh;
+    display: flex;
+    gap: 3.75rem;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  &__image {
+    height: 20.9375rem;
+    width: 100%;
+    background-color: $black;
+    border-radius: 10px;
+    margin-top: 3.75rem;
+    margin-bottom: 1.875rem;
+
+    @include breakpoint-up(large) {
+      margin: 0;
+      height: 33.5rem;
+      width: 50%;
+    }
+  }
+
+  &__text {
+    @include breakpoint-up(large) {
+      width: 50%;
+    }
+  }
+
+  &__title {
+    font-size: $heading-sm-32;
+    font-weight: $bold;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+
+    @include breakpoint-up(large) {
+      font-size: $heading-lg-48;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__subtitle {
+    font-size: $body-18;
+    margin-bottom: 0.9375rem;
+  }
+}
+
+.tech {
+  margin-bottom: 5.625rem;
+  @include breakpoint-up(large) {
+    display: flex;
+  }
+
+  &__title {
+    font-size: $heading-md-40;
+    font-weight: $bold;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+
+    @include breakpoint-up(large) {
+      font-size: $heading-md-40;
+      margin-right: 10rem;
+    }
+  }
+
+  &__description {
+    font-size: $body-18;
+    margin-bottom: 0.9375rem;
+  }
+
+  &__stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 40px;
+    margin-top: 2rem;
+
+    @include breakpoint-up(large) {
+      gap: 0;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    &--titles {
+      font-size: $heading-xs-24;
+      font-weight: $semibold;
+
+      @include breakpoint-up(large) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

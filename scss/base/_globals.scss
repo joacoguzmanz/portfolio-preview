@@ -1,8 +1,9 @@
-@forward '../utilities/variables';
+@import '../utilities/variables';
 
 body {
   font-family: 'Epilogue', sans-serif;
   font-weight: $regular;
+  color: $grey;
 }
 
 a,
@@ -11,4 +12,5 @@ a:active,
 a:visited {
   text-decoration: none;
   color: $grey;
+  cursor: pointer;
 }

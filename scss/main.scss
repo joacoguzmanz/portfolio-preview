@@ -1,14 +1,14 @@
 // Utilities
-@use './utilities/all';
+@import './utilities/all';
 
 // Base
-@use './base/all';
+@import './base/all';
 
 // Components
-@use './components/all';
+@import './components/all';
 
 // Layouts
-@use './layouts/all';
+@import './layouts/all';
 
 // Pages
-@use './pages/all';
+@import './pages/all';

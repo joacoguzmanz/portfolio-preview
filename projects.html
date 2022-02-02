@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cb277fa1c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Joaquin Guzman - Portfolio projects</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Navigation -->
+      <nav class="container header__nav flex flex-ai-c flex-jc-sb">
+        <!-- Logo -->
+        <a href="/index.html"><h1 class="header__logo">Jg</h1></a>
+
+        <!-- Hamburguer toggle -->
+        <a href="#" class="header__toggle hide-for-desktop" id="btnHamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <!-- Links -->
+        <div class="header__links hide-for-mobile">
+          <a href="/projects.html">Portfolio</a>
+          <a href="/about.html">About Me</a>
+          <a href="#">Blog</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div class="header__menu flex flex-fd-cl flex-jc-c">
+        <a href="/index.html">Home</a>
+        <a href="/projects.html">Portfolio</a>
+        <a href="/about.html">About</a>
+        <a href="#">Blog</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero container">
+      <h1 class="hero__title">My projects</h1>
+      <p class="hero__subtitle">
+        Here are some of the projects I've worked on and the process I followed
+        to make them
+      </p>
+    </section>
+
+    <!-- Projects section -->
+    <div class="section-container">
+      <section class="projects container">
+        <div class="projects__cards">
+          <div class="projects__cards__image"></div>
+          <div class="projects__cards__content">
+            <h3 class="projects__cards__content__title">Website + Blog</h3>
+            <p class="projects__cards__content__technologies">
+              HTML, CSS, SASS, JavaScript, PostgreSQL, Django
+            </p>
+            <p class="projects__cards__content__description">
+              My own portfolio website and blog.
+            </p>
+            <a href="#" class="button projects__cards__content__button"
+              >Read more</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-container">
+      <footer class="footer container">
+        <h2 class="footer__text">You can contact me here</h2>
+        <a href="mailto:contact@joacoguzman.com" class="footer__mail"
+          >contact@joacoguzman.com</a
+        >
+        <div class="footer__social-links">
+          <a href="https://www.instagram.com/joacoguzmanz/" target="_blank"
+            ><span class="fab fa-instagram"></span
+          ></a>
+          <a href="https://www.linkedin.com/in/guzman-joaquin/" target="_blank"
+            ><span class="fab fa-linkedin"></span
+          ></a>
+          <a href="https://dribbble.com/triadstudioco" target="_blank"
+            ><span class="fab fa-dribbble"></span
+          ></a>
+          <a href="https://github.com/joacoguzmanz" target="_blank"
+            ><span class="fab fa-github"></span
+          ></a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/app.js"></script>
+  </body>
+</html>

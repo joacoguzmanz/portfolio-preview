@@ -1,0 +1,58 @@
+.contact {
+  @include breakpoint-up(large) {
+    display: flex;
+    gap: 45px;
+    padding-top: 90px;
+  }
+
+  .information {
+    margin-bottom: 60px;
+    padding-top: 60px;
+
+    @include breakpoint-up(large) {
+      padding-top: 0;
+      margin-bottom: 0;
+      width: 50%;
+    }
+
+    &__title {
+      font-size: $heading-md-40;
+
+      @include breakpoint-up(large) {
+        font-size: $heading-xxl-64;
+      }
+    }
+
+    &__description {
+      font-size: $body-18;
+      font-weight: $regular;
+      margin-bottom: 30px;
+    }
+
+    &__social-links {
+      display: flex;
+      justify-content: space-evenly;
+
+      a {
+        color: $black;
+        font-size: $heading-xs-24;
+      }
+
+      @include breakpoint-up(large) {
+        display: block;
+
+        a {
+          &:not(:last-child) {
+            margin-right: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  &__form {
+    @include breakpoint-up(large) {
+      width: 50%;
+    }
+  }
+}
